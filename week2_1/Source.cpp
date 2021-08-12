@@ -10,19 +10,23 @@ int main()
 	printf("BMI = %.1f \n", BMI);
 	if (BMI < 18.5)
 	{
-		printf("น้ำหนักต่ำกว่าเกณฑ์");
+		printf("Underweight");
 	}
 	else if (18.5 <= BMI <= 24.9)
 	{
-		printf("ปกติ");
+		printf("Normal");
 	}
 	else if (25.0 <= BMI <= 29.9)
 	{
-		printf("สูงกว่ามาตรฐาน");
+		printf("Overweight");
 	}
-	else if (BMI >= 30.0)
+	else if (30.0<= BMI <= 34.9)
 	{
-		printf("อ้วนเกินไป");
+		printf("Obese");
+	}
+	else if (BMI >= 35.0)
+	{
+		printf("Extremly Obese");
 	}
 	return 0;
 }
